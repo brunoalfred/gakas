@@ -1,0 +1,50 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "React Learning",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+    
+  },
+  "repository": "https://github.com/brunoalfred/ui.git",
+  "author": "Bruno Alfred <alfredybruno@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "3": "^2.1.0",
+    "-": "^0.0.1",
+    "@sentry/react": "^5.20.1",
+    "bootstrap": "^4.5.2",
+
+
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-query": "^2.5.13",
+    "react-router-dom": "^5.2.0",
+  
+    "reactstrap": "^8.5.1"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "babel-jest": "^24.9.0",
+    "parcel-bundler": "^1.12.4",
+    "react-scripts": "^3.4.3",
+    "react-test-renderer": "^16.13.1"
+  },
+  "proxy": "http://localhost:3000",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
