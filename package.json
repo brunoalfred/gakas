@@ -1,0 +1,36 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "React Learning",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel -p 5678 public/index.html",
+    "build": "parcel build public/index.html",
+    "test": "jest"
+  },
+  "repository": "https://github.com/brunoalfred/ui.git",
+  "author": "Bruno Alfred <alfredybruno@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "3": "^2.1.0",
+    "-": "^0.0.1",
+    "@sentry/react": "^5.20.1",
+    "bootstrap": "^4.5.2",
+
+
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-query": "^2.5.13",
+    "react-router-dom": "^5.2.0",
+    "reacts": "^0.0.0",
+    "reactstrap": "^8.5.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "jest": "^26.3.0",
+    "parcel-bundler": "^1.12.4",
+    "react-test-renderer": "^16.13.1"
+  },
+  "proxy": "http://localhost:3000"
+}
