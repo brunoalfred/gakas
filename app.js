@@ -5,13 +5,14 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-require("dotenv").config()
+require("dotenv").config();
 
 const indexRouter = require("./routes/index");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const aboutRouter = require("./routes/about");
 const inboxRouter = require("./routes/inbox");
+
 
 const app = express();
 
@@ -33,16 +34,18 @@ app.use("/about", aboutRouter);
 app.use("/inbox", inboxRouter);
 
 // Connect to DB
-try {
-  mongoose.connect(process.env.DB_URI, {
+
+mongoose
+  .connect(process.env.DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .catch((error) => {
+    console.log(error);
+    process.exit(1);
   });
-  console.log("connected successfully");
-} catch (error) {
-  console.log(error);
-  process.exit(1);
-}
+
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
