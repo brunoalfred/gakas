@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "test": "jest"
+    
+    "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
+    "pretest": "cross-env NODE_ENV=test"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -20,6 +22,7 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "jest": "^26.4.2",
     "nodemon": "^2.0.4",
