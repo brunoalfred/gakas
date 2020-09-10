@@ -5,7 +5,6 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    
     "test": "cross-env NODE_ENV=test jest --testTimeout=10000",
     "pretest": "cross-env NODE_ENV=test"
   },
@@ -22,6 +21,7 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.3",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "jest": "^26.4.2",
@@ -33,5 +33,6 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ]
-  }
+  },
+  "preset": "@shelf/jest-mongodb"
 }
