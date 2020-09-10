@@ -5,18 +5,18 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
-const express = require('express');
 const Sentry = require('@sentry/node');
-const Tracing = require("@sentry/tracing")
+const Tracing = require("@sentry/tracing");
 
 require("dotenv").config();
-const DB_run = require("./lib/setup-db")
+const DB_run = require("./lib/setup-db");
 
 const indexRouter = require("./routes/index");
 const registerRouter = require("./routes/register");
 const loginRouter = require("./routes/login");
 const aboutRouter = require("./routes/about");
 const inboxRouter = require("./routes/inbox");
+const debugSentry = require("./routes/sentry");
 
 
 const app = express();
@@ -56,6 +56,7 @@ app.use("/login", loginRouter);
 app.use("/register", registerRouter);
 app.use("/about", aboutRouter);
 app.use("/inbox", inboxRouter);
+app.use("/debug-sentry", debugSentry);
 
 // Connect to DB
 DB_run()
