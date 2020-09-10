@@ -4,8 +4,9 @@ const path = require("path");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
-const mongoose = require("mongoose");
+
 require("dotenv").config();
+const DB_run = require("./lib/setup-db")
 
 const indexRouter = require("./routes/index");
 const registerRouter = require("./routes/register");
@@ -34,17 +35,7 @@ app.use("/about", aboutRouter);
 app.use("/inbox", inboxRouter);
 
 // Connect to DB
-
-mongoose
-  .connect(process.env.DB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  })
-  .catch((error) => {
-    console.log(error);
-    process.exit(1);
-  });
+DB_run()
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
