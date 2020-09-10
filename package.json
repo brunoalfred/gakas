@@ -9,6 +9,8 @@
     "pretest": "cross-env NODE_ENV=test"
   },
   "dependencies": {
+    "@sentry/node": "^5.23.0",
+    "@sentry/tracing": "^5.23.0",
     "bcrypt": "^5.0.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
