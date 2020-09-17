@@ -1,0 +1,28 @@
+name: URL Status
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  review-app-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test to verify status of a URL
+        uses: niteoweb/reviewapps-deploy-status@v1.5.0
+        with:
+          # URL to be verified 
+          url: https://moecive.herokuapp.com/
+
+          # Interval for the repeating checks, default is 10 seconds
+          interval: 10
+
+          # Delay before verifying the status, default is 5 seconds
+          load_time_delay: 5
+
+          # Acceptable HTTP responses for the check, default is 200
+          accepted_responses: 200
+
+          # Max time to be spent retrying for the check, default is 120
+          publish_timeout: 120
