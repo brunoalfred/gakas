@@ -41,31 +41,35 @@ const IndexPage = (props: LayoutProps) => (
 
     {/* About this starter */}
     <Segment vertical className="stripe">
+     
+  
       <Grid stackable verticalAlign="middle" className="container">
         <Grid.Row>
           <Grid.Column width="8">
-            <Header>Lorem ipsum</Header>
+            <Header>Kevin Mitnick</Header>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-              laudantium ad, quae, perspiciatis ipsa distinctio.
+              Are hackers a threat? The degree of threat presented by any
+              conduct, whether legal or illegal, depends on the actions and
+              intent of the individual and the harm they cause.
             </p>
-            <Header>Dolor sit amet</Header>
+            <Header>Emmanuel Goldstein</Header>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-              laudantium ad, quae, perspiciatis ipsa distinctio.
+              Most hackers are young because young people tend to be adaptable.
+              As long as you remain adaptable, you can always be a good hacker.
             </p>
           </Grid.Column>
           <Grid.Column width="6" floated="right">
             {/* TODO replace with a pretty GIF */}
-            <Header>Lorem ipsum</Header>
+            <Header>Bruce Sterling</Header>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-              laudantium ad, quae, perspiciatis ipsa distinctio.
+              Hackers are arrogant geek romantics. They lack the attentive
+              spirit of inquiry.
             </p>
-            <Header>Dolor sit amet</Header>
+            <Header>Dan Kaminsky</Header>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
-              laudantium ad, quae, perspiciatis ipsa distinctio.
+              It is a fairly open secret that almost all systems can be hacked,
+              somehow. It is a less spoken of secret that such hacking has
+              actually gone quite mainstream.
             </p>
           </Grid.Column>
         </Grid.Row>
@@ -85,35 +89,27 @@ const IndexPage = (props: LayoutProps) => (
         <Grid.Row>
           <Grid.Column>
             <Header icon>
-              <Icon name="wizard"></Icon>A kind of magic!
+              <Icon name="caret down"></Icon>Skills  ☠️
             </Header>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-              eaque at quae cupiditate aspernatur quibusdam! Distinctio quod
-              non, harum dolorum earum molestias, beatae expedita aliquam
-              dolorem asperiores nemo amet quaerat.
+             Hacking Skills For you !
             </p>
           </Grid.Column>
           <Grid.Column>
             <Header icon>
-              <Icon name="wizard"></Icon>A kind of magic!
+              <Icon name="caret down"></Icon>Tools  🥵
             </Header>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-              eaque at quae cupiditate aspernatur quibusdam! Distinctio quod
-              non, harum dolorum earum molestias, beatae expedita aliquam
-              dolorem asperiores nemo amet quaerat.
+             Hacking Tools For you !
+
             </p>
           </Grid.Column>
           <Grid.Column>
             <Header icon>
-              <Icon name="wizard"></Icon>A kind of magic!
+              <Icon name="caret down"></Icon>Tips 🤫
             </Header>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-              eaque at quae cupiditate aspernatur quibusdam! Distinctio quod
-              non, harum dolorum earum molestias, beatae expedita aliquam
-              dolorem asperiores nemo amet quaerat.
+            Hacking Tips For you !
             </p>
           </Grid.Column>
         </Grid.Row>
