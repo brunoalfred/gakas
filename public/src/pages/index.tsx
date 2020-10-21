@@ -89,7 +89,7 @@ const IndexPage = (props: LayoutProps) => (
         <Grid.Row>
           <Grid.Column>
             <Header icon>
-              <Icon name="caret down"></Icon>Skills  ☠️
+              <Icon name="eject"></Icon>Skills  ☠️
             </Header>
             <p>
              Hacking Skills For you !
@@ -97,7 +97,7 @@ const IndexPage = (props: LayoutProps) => (
           </Grid.Column>
           <Grid.Column>
             <Header icon>
-              <Icon name="caret down"></Icon>Tools  🥵
+              <Icon name="eject"></Icon>Tools  🥵
             </Header>
             <p>
              Hacking Tools For you !
@@ -106,7 +106,7 @@ const IndexPage = (props: LayoutProps) => (
           </Grid.Column>
           <Grid.Column>
             <Header icon>
-              <Icon name="caret down"></Icon>Tips 🤫
+              <Icon name="eject"></Icon>Tips 🤫
             </Header>
             <p>
             Hacking Tips For you !

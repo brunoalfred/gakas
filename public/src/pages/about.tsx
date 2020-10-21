@@ -7,22 +7,22 @@ const AboutPage = () => {
     <Container>
       <Segment vertical>
         <Header as="h2">
-          <Icon name="info circle" />
+          <Icon name="envelope open" />
           <Header.Content>
-            About
+          WORK YOUR WAY INTO INFOSEC
           </Header.Content>
         </Header>
       </Segment>
       <Segment vertical>
         <p>
-          This starter was created by @fabien0102.
+          Have all that you need as an INFOSEC expert. For skills, tools and all that is happening in the 
         </p>
         <p>
-          For any question, I'm on <a href="https://discord.gg/2bz8EzW" target="blank">discord #reactiflux/gatsby</a>
+          For any question, I'm on <a href="https://discord.gg/nAuUER" target="blank">discord server </a>
         </p>
         <p>
-          For any issues, any PR are welcoming
-          <a href="https://github.com/fabien0102/gatsby-starter/issues" target="blank"> on this repository</a>
+          For anything to contribute
+          <a href="https://github.com/brunoalfred/gakas" target="blank"> on this repository</a>
         </p>
       </Segment>
     </Container>
