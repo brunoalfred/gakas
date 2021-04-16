@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",    
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor",
+    ":ignoreUnstable"
+  ]
+}
